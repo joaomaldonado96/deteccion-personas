@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/deteccion-personas/static/css/main.f27d3ac2.css",
-    "main.js": "/deteccion-personas/static/js/main.762cda8a.js",
+    "main.css": "/deteccion-personas/static/css/main.557220dc.css",
+    "main.js": "/deteccion-personas/static/js/main.ecd55ab4.js",
     "static/js/206.62ac7294.chunk.js": "/deteccion-personas/static/js/206.62ac7294.chunk.js",
     "index.html": "/deteccion-personas/index.html"
   },
   "entrypoints": [
-    "static/css/main.f27d3ac2.css",
-    "static/js/main.762cda8a.js"
+    "static/css/main.557220dc.css",
+    "static/js/main.ecd55ab4.js"
   ]
 }
