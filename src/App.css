@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #282c34;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ video {
 }
 
 .container {
-  padding: 100px;
+  padding:20px 40px;
 }
 
 .accordion {

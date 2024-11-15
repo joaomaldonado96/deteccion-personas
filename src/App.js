@@ -69,8 +69,16 @@ function App() {
           Modelo de detección <strong> Coco-SSD</strong>
         </div>
         <div className='container'>
+
+          <button className="btn btn-outline-secondary" onClick={toggleVideo}>
+            {isPaused ? "Reanudar Video" : "Pausar Video"}
+          </button>
+
+          <hr />
           <video ref={videoRef} autoPlay playsInline muted width="100%" height="100%" />
+          <hr />
         </div>
+        
         <div className="card-body">
           <h1 className="card-text">Personas detectadas:{isLoading && (
             <div className="spinner-overlay">
@@ -137,12 +145,6 @@ function App() {
               </div>
             </div>
           </div>
-
-
-          <hr />
-          <button className="btn btn-outline-secondary" onClick={toggleVideo}>
-            {isPaused ? "Reanudar Video" : "Pausar Video"}
-          </button>
         </div>
       </div>
     </div>
