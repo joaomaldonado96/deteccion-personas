@@ -78,18 +78,22 @@ function App() {
                 <span className="visually-hidden">Cargando...</span>
               </div>
             </div>
-          )} {!isLoading? personCount : "" }</h1>
+          )} {!isLoading ? personCount : ""}</h1>
           <hr />
 
-          <div className="accordion accordion-flush" id="accordionFlushExample">
-            <div className="accordion-item text-bg-dark">
-              <h2 className="accordion-header">
-                <button className="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  <h3 className='definition'> Definición Coco-SSD</h3>
-                </button>
-              </h2>
-              <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body">
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Definicion del modelo
+          </button>
+
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content text-bg-dark">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Definición Coco-SSD</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                   <p>
                     Coco-SSD es un modelo de detección de objetos basado en la arquitectura<br />
                     Single Shot Multibox Detector (SSD) y entrenado en el conjunto de datos COCO<br />
@@ -127,11 +131,16 @@ function App() {
                     como TensorFlow y PyTorch.
                   </p>
                 </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
               </div>
             </div>
           </div>
+
+
           <hr />
-          <button className="btn btn-primary" onClick={toggleVideo}>
+          <button className="btn btn-outline-secondary" onClick={toggleVideo}>
             {isPaused ? "Reanudar Video" : "Pausar Video"}
           </button>
         </div>

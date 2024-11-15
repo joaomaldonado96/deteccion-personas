@@ -16,6 +16,16 @@ body {
   pointer-events: none;
 }
 
+video {
+  transform: scaleX(-1); /* Inversión horizontal */
+  display: block;
+  margin: auto;
+}
+
+.modal-body p {
+  text-align: justify;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
